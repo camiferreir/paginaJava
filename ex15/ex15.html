@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Enquete com Votos</title>
+  <link rel="stylesheet" href="ex15.css">
+</head>
+<body>
+     <a href="/index.html" class="voltar">← Voltar para a página inicial</a>
+  <main>
+    <h2>Qual é o seu sabor de pizza favorito?</h2>
+    <div id="opcoes">
+      <label>
+        <input type="radio" name="opcao" value="Calabresa"> Calabresa
+      </label>
+      <label>
+        <input type="radio" name="opcao" value="Mussarela"> Mussarela
+      </label>
+      <label>
+        <input type="radio" name="opcao" value="Frango"> Frango
+      </label>
+      <label>
+        <input type="radio" name="opcao" value="Quatro Queijos"> Quatro Queijos
+      </label>
+    </div>
+    <button onclick="votar()">Votar</button>
+
+    <div id="resultados" style="display: none;">
+      <h3>Resultados da Enquete</h3>
+      <div id="resultadoCalabresa">Calabresa: 0 votos (0%)</div>
+      <div id="resultadoMussarela">Mussarela: 0 votos (0%)</div>
+      <div id="resultadoFrango">Frango: 0 votos (0%)</div>
+      <div id="resultado4Queijos">Quatro Queijos: 0 votos (0%)</div>
+    </div>
+  </main>
+
+  <script src="ex15.js"></script>
+</body>
+</html>

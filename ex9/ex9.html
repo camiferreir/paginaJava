@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="ex9.css">
+  <title>Simulador de Semáforo</title>
+</head>
+<body>
+  <a href="/index.html" class="voltar">← Voltar para a página inicial</a>
+  <main>
+    <h1>Simulador de Semáforo</h1>
+
+    <div id="semaforo">
+      <div id="vermelho" class="semaforo-luz"></div>
+      <div id="amarelo" class="semaforo-luz"></div>
+      <div id="verde" class="semaforo-luz"></div>
+    </div>
+
+    <button onclick="mudarCor('vermelho')">Vermelho</button>
+    <button onclick="mudarCor('amarelo')">Amarelo</button>
+    <button onclick="mudarCor('verde')">Verde</button>
+  </main>
+
+  <script src="ex9.js"></script>
+
+  <style>
+    #semaforo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .semaforo-luz {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 10px 0;
+      background-color: gray;
+    }
+
+    #vermelho.active {
+      background-color: red;
+    }
+
+    #amarelo.active {
+      background-color: yellow;
+    }
+
+    #verde.active {
+      background-color: green;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</body>
+</html>

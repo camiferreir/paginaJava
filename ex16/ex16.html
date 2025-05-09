@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Palavras e Letras</title>
+  <link rel="stylesheet" href="ex16.css">
+</head>
+<body>
+     <a href="/index.html" class="voltar">← Voltar para a página inicial</a>
+  <main>
+    <h2>Contador de Palavras e Letras</h2>
+    <textarea id="texto" placeholder="Digite seu texto aqui..." rows="5"></textarea>
+    <button onclick="contarTexto()">Contar</button>
+
+    <div id="resultado" style="display: none;">
+      <p>Palavras: <span id="contagemPalavras">0</span></p>
+      <p>Letras: <span id="contagemLetras">0</span></p>
+    </div>
+  </main>
+
+  <script src="ex16.js"></script>
+</body>
+</html>
